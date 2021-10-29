@@ -39,8 +39,7 @@ if riga==2
 
   knot2(k:k+pxx-1)=1;
 endif
-
-%knot2
+knot2
 
 knot_vectorx=knot2;
 knot_vectory=knot2;  
@@ -118,9 +117,7 @@ for ex = 1:elementsx;
   endfor
 endfor
 
-%spy(A);
-
-A
+spy(A);
 
 return
 
@@ -137,12 +134,12 @@ endfor
 
 %diag
 
-%figure(1); 
-%arg=[1:1:size];
-%set(gca,'Fontsize',60); 
-%plot(arg,diag,'LineWidth',3);
-%title('A11');
-%hold on
+figure(1); 
+arg=[1:1:size];
+set(gca,'Fontsize',60); 
+plot(arg,diag,'LineWidth',3);
+title('A11');
+hold on
 
 %A11inv
 A11inv=inverse(A11);
@@ -155,12 +152,12 @@ endfor
 
 %diag
 
-%figure(2); 
-%arg=[1:1:size];
-%set(gca,'Fontsize',60); 
-%plot(arg,diag,'LineWidth',3);
-%title('A11^{-1}');
-%hold on
+figure(2); 
+arg=[1:1:size];
+set(gca,'Fontsize',60); 
+plot(arg,diag,'LineWidth',3);
+title('A11^{-1}');
+hold on
 
 %A12
 
@@ -172,11 +169,11 @@ endfor
 
 %diag
 
-%figure(3); 
-%arg=[1:1:size];
-%set(gca,'Fontsize',60); 
-%plot(arg,diag,'LineWidth',3);
-%title('A12');
+figure(3); 
+arg=[1:1:size];
+set(gca,'Fontsize',60); 
+plot(arg,diag,'LineWidth',3);
+title('A12');
 
 %A11^{-11}A12
 A11invA12=A11inv*A12;
@@ -189,11 +186,11 @@ A11invA12=A11inv*A12;
 
 %diag
 
-%figure(4); 
-%arg=[1:1:size];
-%set(gca,'Fontsize',60); 
-%plot(arg,diag,'LineWidth',3);
-%title('A11^{-1}*A12');
+figure(4); 
+arg=[1:1:size];
+set(gca,'Fontsize',60); 
+plot(arg,diag,'LineWidth',3);
+title('A11^{-1}*A12');
 
 %funkcja wyliczajaca stopien wielomianow
 function p=compute_p(knot_vector)
