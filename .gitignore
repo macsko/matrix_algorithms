@@ -1,0 +1,9 @@
+# ios specific files
+.DS_Store
+
+# local python files
+*.local.py
+__pycache__/**
+
+# test directory
+test/
