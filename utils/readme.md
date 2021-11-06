@@ -38,5 +38,9 @@ matix size should be $(nxx + pxx)^2$ (however it does not work AFAIK xD).
 The file with matrx representation, to be seen in notebook, should be located in `/output` directory and named as follows:
 
 ```
+<<<<<<< HEAD
 <matrix-type>-<width>x<height>.txt
+=======
+<matrix-type><width>x<height>.txt
+>>>>>>> Add generate-matrix.sh description
 ```
