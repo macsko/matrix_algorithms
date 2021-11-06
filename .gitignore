@@ -8,3 +8,8 @@ __pycache__/**
 # test directory
 test/
 
+# notebook directories
+.ipynb_checkpoints/
+
+# notes
+notes*.md
