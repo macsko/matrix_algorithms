@@ -3,24 +3,24 @@
 Usage: 
 
 ```
-./generate-matrix.sh riga nxx pxx rxx > output-file-name.txt
+./generate-matrix.sh matrix-type nxx pxx rxx [output-file-name]
 ```
 
-where for:
+where **matrix-type** is one of:
 
-* **IGA**:
+* **iga**, then:
 	* $riga = 0$
 	* $nxx \ge 2$
 	* $pxx \in [2, 3, 4]$
 	* $rxx = 0$
 
-* **FEM**:
+* **fem**, then:
 	* $riga = 1$
 	* $nxx \ge 2$
 	* $pxx \in [2, 3, 4]$
 	* $rxx = 0$
 
-* **rIGA**:
+* **riga**, then:
 	* $riga = 2$
 	* $nxx \ge 2$
 	* $pxx \in [2, 3, 4]$
@@ -29,9 +29,13 @@ where for:
 
 ## Matrix size
 
-[Docs say](https://upel2.cel.agh.edu.pl/wiet/pluginfile.php/103424/mod_resource/content/1/Opis%20mass_matrix.pdf) final 
-matix size should be $(nxx + pxx)^2$ (however it does not work AFAIK xD).
+* **IGA**
 
+	$(nxx + pxx)^2$ x $(nxx + pxx)^2$
+
+* **FEM**
+
+	$(2 * nxx + pxx - 1)^2$ x $(2 * nxx + pxx - 1)^2$
 
 ## Naming convention
 

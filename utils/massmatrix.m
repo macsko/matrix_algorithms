@@ -40,7 +40,7 @@ if riga==2
   knot2(k:k+pxx-1)=1;
 endif
 
-%knot2
+knot2
 
 knot_vectorx=knot2;
 knot_vectory=knot2;  
