@@ -42,18 +42,14 @@ struct Matrix{
 };
 
 std::ostream& operator<<(std::ostream& os, Matrix m){
-    for(int i=0; i<m.r; i++){
-        for(int j=0; j<m.c; j++){
-            //os<<m.values[i*m.c + j]<<" ";
-            if(m.values[i*m.c + j] != 0)
-                os<<"*";
-            else
-                os<<" ";
-        }
-        os<<std::endl;
-    }
-        
-    return os;
+	for(int i=0; i<m.r; i++){
+		for(int j=0; j<m.c; j++){
+			if(m.values[i*m.c + j] != 0)
+				os << '(' << j + 1  << ", " << i + 1 << ") ->  " << m.values[i * m.c + j] << "\n";
+		}
+	}
+	os << std::endl;
+	return os;
 }
 
 #endif
