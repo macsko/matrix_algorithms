@@ -13,3 +13,9 @@ test/
 
 # notes
 notes*.md
+
+# output files
+
+scripts/cpp/out/
+
+scripts/cpp/build/
