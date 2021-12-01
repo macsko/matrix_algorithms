@@ -3,7 +3,7 @@
 Usage: 
 
 ```
-./generate-matrix.sh matrix-type nxx pxx rxx [output-file-name]
+./generate-matrix.sh (octave|cpp) matrix-type nxx pxx rxx [output-file-name]
 ```
 
 where **matrix-type** is one of:
@@ -44,3 +44,6 @@ The file with matrx representation, to be seen in notebook, should be located in
 ```
 <matrix-type>-<width>x<height>.txt
 ```
+
+If you don't specify your own `output-file-name`, the script puts result into `__default_data_dir__`/{matrix-type}-{matrix-size}x{matrix-size}.txt 
+file (conforming to the naming convention) (defined [here](utils/paths.sh))
