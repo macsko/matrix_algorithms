@@ -19,3 +19,7 @@ notes*.md
 scripts/cpp/out/
 
 scripts/cpp/build/
+
+output/*
+
+!output/\.gitkeep
