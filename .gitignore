@@ -16,10 +16,18 @@ notes*.md
 
 # output files
 
-scripts/cpp/out/
+scripts/cpp/out/*
+!scripts/cpp/out/.gitkeep
 
-scripts/cpp/build/
+scripts/cpp/build/*
+!scripts/cpp/build/.gitkeep
 
 output/*
 
-!output/\.gitkeep
+!output/.gitkeep
+
+# Local environment configuration
+.envrc
+
+# Local python environment configuration
+.venv
