@@ -16,9 +16,11 @@ notes*.md
 
 # output files
 
-scripts/cpp/out/
+scripts/cpp/out/*
+!scripts/cpp/out/.gitkeep
 
-scripts/cpp/build/
+scripts/cpp/build/*
+!scripts/cpp/build/.gitkeep
 
 output/*
 
