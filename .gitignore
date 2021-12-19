@@ -22,4 +22,10 @@ scripts/cpp/build/
 
 output/*
 
-!output/\.gitkeep
+!output/.gitkeep
+
+# Local environment configuration
+.envrc
+
+# Local python environment configuration
+.venv
