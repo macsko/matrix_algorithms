@@ -31,3 +31,6 @@ output/*
 
 # Local python environment configuration
 .venv
+
+# vscode configuration
+.vscode
